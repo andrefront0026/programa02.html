@@ -2,20 +2,20 @@
 
 <script>
 
-function pintaQuadradoVerde(x, y) {
+function pintaQuadrado(x, y, cor) {
 
     var tela = document.querySelector('canvas');
     var pincel = tela.getContext('2d');
 
-    pincel.fillStyle='green';
+    pincel.fillStyle=cor;
     pincel.fillRect(x, y, 50, 50);
     pincel.strokeStyle='black';
     pincel.strokeRect(x, y, 50, 50);
 
 }
 
-    pintaQuadradoVerde(0, 0);
-    pintaQuadradoVerde(0, 50);
-    pintaQuadradoVerde(0, 100);
+    pintaQuadrado(0, 0, 'blue');
+    pintaQuadrado(0, 50, 'red');
+    pintaQuadrado(0, 100, 'yellow');
 
 </script>
